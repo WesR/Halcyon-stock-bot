@@ -24,8 +24,7 @@ This bot will
 ```json
 {
 	"halcyon":"eyJ0e==",
-	"iex": "pk_12",
-	"iex_dev":"Tpk_78"
+	"iex": "pk_12"
 }
 ```
 4. Run the bot `python3 bot.py`
