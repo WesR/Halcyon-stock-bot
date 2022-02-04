@@ -23,7 +23,7 @@ def get_stock_info(ticker):
             $410.69 (-2.%)
         """
         message = resp.json()["companyName"] + "\n\n"
-        message += "${price} __({change}%)__ \n".format(price=resp.json()["delayedPrice"], change=(str(resp.json()["changePercent"]*100)[:3]))
+        message += "${price} __({change}%)__ \n".format(price=resp.json()["latestPrice"], change=(str(resp.json()["changePercent"]*100)[:3]))
         return message
     else:
         return None
