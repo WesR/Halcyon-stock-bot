@@ -14,7 +14,7 @@ This bot will
 
 ## Requirments
 1. A matrix account for the bot
-2. An free api key from (IEX)[https://iexcloud.io/s/ec26bc7b]
+2. An free api key from [IEX](https://iexcloud.io/s/ec26bc7b)
 3. A place to run the bot
 
 ## Bot setup
@@ -30,3 +30,5 @@ This bot will
 ```
 4. Run the bot `python3 bot.py`
 5. Invite the bot to an unencrypted room, and give it a test
+
+![Example image](./Screenshot_working.png)
