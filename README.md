@@ -8,8 +8,8 @@ This bot will
 	+ Stock name
 	+ Current price
 	+ Todays Percent change
-3. Have a small "index" that only moderators or higher can add stocks to
-4. Give the index when someone says "!index"
+3. Join rooms via invite
+4. Set its status message
 
 
 ## Requirments
@@ -18,9 +18,9 @@ This bot will
 3. A place to run the bot
 
 ## Bot setup
-1. `python3 -m pip install halcyon`
-2. Create the Halcyon token `python3 -m halcyon -s server.xyz -u @hstockbot:server.xyz -p "password"`
-3. Save the above key, and your iex key in a file called `creds.json`, formatted like below.
+1. Install Halcyon `python3 -m pip install halcyon`
+2. Create a Halcyon token `python3 -m halcyon -s server.xyz -u @hstockbot:server.xyz -p "password"`
+3. Save the above key, and along with your IEX key in a file called `creds.json`, formatted like below.
 ```json
 {
 	"halcyon":"eyJ0e==",

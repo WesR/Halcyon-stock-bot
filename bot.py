@@ -38,8 +38,7 @@ async def on_room_invite(room):
 
 @client.event
 async def on_message(message):
-
-    #If we see a message by the bot, don't respond
+    #If we see a message by the bot, don't respond to it
     if message.sender == "@hstockbot:blackline.xyz":#this is our bot username
         return
 
@@ -53,7 +52,7 @@ async def on_message(message):
                 responce_comment += resp + "\n"
 
         if responce_comment:#if we found a stock, and have a comment, send it
-            await client.send_message(message.room.id, body=responce_comment, textFormat = "markdown", replyTo=message.event.id)
+            await client.send_message(message.room.id, body=responce_comment, textFormat="markdown", replyTo=message.event.id)
 
 @client.event
 async def on_ready():
@@ -61,4 +60,4 @@ async def on_ready():
     await client.change_presence(statusMessage="Reading the ticker tape")
 
 if __name__ == '__main__':
-    client.run(halcyonToken=keys["halcyon"], longPollTimeout=3)
+    client.run(halcyonToken=keys["halcyon"], longPollTimeout=1)#make sure you set it back to 30sec once your done debugging
