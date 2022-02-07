@@ -28,7 +28,7 @@ This bot will
 	"iex_dev":"Tpk_78"
 }
 ```
-4. Run the bot `python3 bot.py`
+4. Run the bot `python3 bot.py` (or `python3 bot.py --debug` if you are restarting the bot often)
 5. Invite the bot to an unencrypted room, and give it a test
 
 ![Example image](./Screenshot_working.png)

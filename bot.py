@@ -1,4 +1,4 @@
-import json, re
+import json, re, sys
 import halcyon, requests
 
 
@@ -60,4 +60,12 @@ async def on_ready():
     await client.change_presence(statusMessage="Reading the ticker tape")
 
 if __name__ == '__main__':
-    client.run(halcyonToken=keys["halcyon"], longPollTimeout=1)#make sure you set it back to 30sec once your done debugging
+
+    # If --debug is passed when calling the bot, set the poll timeout to a short 1 second.
+    # We do this so the bot dies within 1 second of ctrl^c, but you might have issues if the server is slow to respond.
+    # Setting a lower timeout does not make your bot quicker, it just means you're nicer to the server when nothing is happening (sending less data)
+    if "--debug" in sys.argv:
+        print("debug enabled")
+        client.run(halcyonToken=keys["halcyon"], longPollTimeout=1)
+
+    client.run(halcyonToken=keys["halcyon"], longPollTimeout=30)
