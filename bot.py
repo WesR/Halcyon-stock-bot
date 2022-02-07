@@ -67,5 +67,5 @@ if __name__ == '__main__':
     if "--debug" in sys.argv:
         print("debug enabled")
         client.run(halcyonToken=keys["halcyon"], longPollTimeout=1)
-
-    client.run(halcyonToken=keys["halcyon"], longPollTimeout=30)
+    else:
+        client.run(halcyonToken=keys["halcyon"], longPollTimeout=30)
