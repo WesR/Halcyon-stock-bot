@@ -1,5 +1,5 @@
 # Halcyon stock bot
-Hello! This is an example / template bot using the [halcyon](https://github.com/WesR/Halcyon) matrix bot library. Feel free to ask questions in the matrix chat [#halcyon:blackline.xyz](https://matrix.to/#/#halcyon:blackline.xyz)
+Hello! This is an example / template bot using the [halcyon](https://github.com/WesR/Halcyon) matrix bot library. Feel free to ask questions in the matrix chat [#halcyon:blackline.xyz](https://matrix.to/#/%23halcyon:blackline.xyz)
 
 ## Bot goals
 This bot will
